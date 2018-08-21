@@ -9,6 +9,20 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
+@protocol gameDelegate <NSObject>
+
+- (void)showWinDialog;
+//-(void)showGameOver;
+- (void)showLoseDialog:(int)score;
+-(void)restartGame;
+-(void)showRankView;
+
+@end
+
+@protocol pauseGameDelegate <NSObject>
+- (void)pauseGame;
+@end
+
 @interface GameViewController : UIViewController
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+//#import "IClearGestureUtil.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    IClearGestureUtil* obj = [IClearGestureUtil new];
+//    
+//    [obj something];
+    
     return YES;
 }
 
